@@ -18,7 +18,7 @@ st.set_page_config(page_title ='Public Crime Dashboard',page_icon = img, layout 
 
 
 cp_original = pd.read_csv('Crime_Data_from_2020_to_Present.csv')
-st.write(cp_original.head())
+# st.write(cp_original.head())
 
 cp = cp_original.drop(columns=['Part 1-2','Vict Descent','Crm Cd 1','Crm Cd 2','Crm Cd 3','Crm Cd 4','LOCATION','Cross Street','LAT','LON']) 
 cp.columns = cp.columns.str.lower() # transform all column header to lower case
